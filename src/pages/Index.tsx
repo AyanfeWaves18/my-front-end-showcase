@@ -11,14 +11,14 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>John Doe | Front-End Developer</title>
+        <title>Ayanfeoluwa Alalade | Frontend Developer</title>
         <meta
           name="description"
-          content="Front-End Developer specializing in building exceptional digital experiences with React, TypeScript, and modern web technologies."
+          content="Frontend Developer based in Nigeria, specializing in building intuitive web experiences with HTML, CSS, JavaScript, and React."
         />
         <meta
           name="keywords"
-          content="front-end developer, web developer, React, TypeScript, JavaScript"
+          content="frontend developer, web developer, HTML, CSS, JavaScript, React, Nigeria"
         />
       </Helmet>
 

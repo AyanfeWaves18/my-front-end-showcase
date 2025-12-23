@@ -16,7 +16,7 @@ const HeroSection = () => {
           className="text-4xl sm:text-5xl md:text-7xl font-bold text-foreground mb-4 opacity-0 animate-fade-in"
           style={{ animationDelay: "400ms" }}
         >
-          John Doe.
+          Ayanfeoluwa Alalade.
         </h1>
         
         <h2
@@ -30,9 +30,7 @@ const HeroSection = () => {
           className="text-muted-foreground max-w-xl text-lg mb-12 leading-relaxed opacity-0 animate-fade-in"
           style={{ animationDelay: "800ms" }}
         >
-          I'm a front-end developer specializing in building exceptional digital
-          experiences. Currently focused on creating accessible, human-centered
-          products with modern web technologies.
+          I'm a frontend developer who believes code is a creative medium. I transform complex problems into intuitive, delightful interfaces. When I'm not wrestling with CSS or JavaScript, I'm probably taking some photographs or doing some image editing while listening to music.
         </p>
         
         <div

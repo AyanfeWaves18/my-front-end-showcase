@@ -1,11 +1,10 @@
 const AboutSection = () => {
   const technologies = [
+    "HTML",
+    "CSS",
     "JavaScript (ES6+)",
-    "TypeScript",
     "React",
-    "Next.js",
-    "Tailwind CSS",
-    "Node.js",
+    "TypeScript",
   ];
 
   return (
@@ -16,20 +15,21 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4 text-muted-foreground">
             <p>
-              Hello! I'm John, a passionate front-end developer based in San
-              Francisco. I enjoy creating things that live on the internet,
+              Hello! I'm Ayanfeoluwa, a passionate frontend developer based in
+              Nigeria. I enjoy creating things that live on the internet,
               whether that be websites, applications, or anything in between.
             </p>
             <p>
-              My interest in web development started back in 2015 when I decided
-              to try editing custom Tumblr themes — turns out hacking together a
-              custom reblog button taught me a lot about HTML & CSS!
+              My journey into tech is rooted in a genuine interest that began in
+              the classroom. From my first exposure to coding in secondary school,
+              I knew I was drawn to the craft of building things with logic and
+              creativity.
             </p>
             <p>
-              Fast-forward to today, and I've had the privilege of working at a
-              start-up, a huge corporation, and a student-led design studio. My
-              main focus these days is building accessible, inclusive products
-              and digital experiences.
+              As a frontend developer, I've honed that early fascination into a
+              focused skill set, creating dynamic and responsive web applications.
+              I believe in writing purposeful code that makes the web more
+              intuitive and accessible.
             </p>
             <p>Here are a few technologies I've been working with recently:</p>
 
