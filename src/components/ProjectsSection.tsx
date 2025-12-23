@@ -1,54 +1,21 @@
-import { ExternalLink, Github, Folder } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const featuredProjects = [
   {
-    title: "E-Commerce Platform",
+    title: "Teal & Gold Mini Store",
     description:
-      "A full-featured e-commerce platform with product management, shopping cart, and payment integration. Built with React, Redux, and Stripe API for seamless transactions.",
-    technologies: ["React", "Redux", "Node.js", "Stripe", "MongoDB"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "A Mini E-Commerce web application featuring product browsing, shopping cart functionality, and a clean user interface for an elegant shopping experience.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    live: "https://teal-and-gold-mini-store.vercel.app/",
     image: "🛒",
   },
   {
-    title: "Task Management App",
+    title: "Nike Rebrand",
     description:
-      "A collaborative task management application with real-time updates, drag-and-drop functionality, and team workspaces. Features include task assignments and progress tracking.",
-    technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-    github: "https://github.com",
-    live: "https://example.com",
-    image: "📋",
-  },
-  {
-    title: "Weather Dashboard",
-    description:
-      "A beautiful weather dashboard that displays current conditions and forecasts. Includes location search, saved locations, and dynamic backgrounds based on weather conditions.",
-    technologies: ["React", "Tailwind CSS", "Weather API", "Chart.js"],
-    github: "https://github.com",
-    live: "https://example.com",
-    image: "🌤️",
-  },
-];
-
-const otherProjects = [
-  {
-    title: "Portfolio Template",
-    description:
-      "A customizable portfolio template for developers and designers.",
-    technologies: ["React", "Tailwind CSS"],
-    github: "https://github.com",
-  },
-  {
-    title: "Chrome Extension",
-    description: "A productivity Chrome extension for managing bookmarks.",
-    technologies: ["JavaScript", "Chrome API"],
-    github: "https://github.com",
-  },
-  {
-    title: "CLI Tool",
-    description: "A command-line tool for scaffolding React projects.",
-    technologies: ["Node.js", "Commander.js"],
-    github: "https://github.com",
+      "A rebranded website concept for Nike, showcasing modern design principles and creative web development with a fresh take on the iconic brand.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    live: "https://nike-rebrand-lemon.vercel.app/",
+    image: "👟",
   },
 ];
 
@@ -117,14 +84,6 @@ const ProjectsSection = () => {
                   }`}
                 >
                   <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground hover:text-primary transition-colors"
-                  >
-                    <Github size={20} />
-                  </a>
-                  <a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -138,41 +97,6 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-        {/* Other Projects */}
-        <h3 className="text-center text-xl font-semibold text-foreground mb-8">
-          Other Noteworthy Projects
-        </h3>
-        <div className="grid md:grid-cols-3 gap-4">
-          {otherProjects.map((project) => (
-            <div
-              key={project.title}
-              className="group p-6 bg-card rounded-lg border border-border hover:border-primary/50 hover:-translate-y-2 transition-all duration-300"
-            >
-              <div className="flex items-center justify-between mb-4">
-                <Folder className="text-primary" size={40} />
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <Github size={20} />
-                </a>
-              </div>
-              <h4 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                {project.title}
-              </h4>
-              <p className="text-muted-foreground text-sm mb-4">
-                {project.description}
-              </p>
-              <ul className="flex flex-wrap gap-2 font-mono text-xs text-muted-foreground">
-                {project.technologies.map((tech) => (
-                  <li key={tech}>{tech}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

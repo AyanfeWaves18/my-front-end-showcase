@@ -3,31 +3,31 @@ import { Code2, Palette, Terminal, Zap } from "lucide-react";
 const skills = [
   {
     icon: Code2,
-    title: "Frontend Development",
+    title: "HTML & Structure",
     description:
-      "Building responsive and performant web applications using React, TypeScript, and modern CSS frameworks.",
-    technologies: ["React", "TypeScript", "Next.js", "Vue.js"],
+      "Building semantic, accessible markup that forms the foundation of every great web experience.",
+    technologies: ["HTML5", "Semantic Elements", "Accessibility", "SEO"],
   },
   {
     icon: Palette,
-    title: "UI/UX Design",
+    title: "CSS & Styling",
     description:
-      "Creating intuitive user interfaces with a focus on user experience and accessibility.",
-    technologies: ["Figma", "Tailwind CSS", "Framer Motion", "Storybook"],
+      "Crafting beautiful, responsive designs with modern CSS techniques and frameworks.",
+    technologies: ["CSS3", "Flexbox", "Grid", "Animations"],
   },
   {
     icon: Terminal,
-    title: "Developer Tools",
+    title: "JavaScript",
     description:
-      "Proficient with modern development workflows, version control, and testing frameworks.",
-    technologies: ["Git", "Webpack", "Vite", "Jest"],
+      "Writing clean, efficient JavaScript to create dynamic and interactive user experiences.",
+    technologies: ["ES6+", "DOM Manipulation", "APIs", "Async/Await"],
   },
   {
     icon: Zap,
-    title: "Performance",
+    title: "React & Modern Tools",
     description:
-      "Optimizing web applications for speed, SEO, and core web vitals.",
-    technologies: ["Lighthouse", "Web Vitals", "Lazy Loading", "Code Splitting"],
+      "Building component-based applications with React and TypeScript for scalable solutions.",
+    technologies: ["React", "TypeScript", "Vite", "Git"],
   },
 ];
 
