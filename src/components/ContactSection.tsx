@@ -1,10 +1,8 @@
-import { Button } from "./ui/button";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: Github, href: "https://github.com/AyanfeWaves18", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/ayanfeoluwa-alalade-34b759362/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:ayanfeoluwaalalade2000@gmail.com", label: "Email" },
 ];
 
@@ -20,10 +18,6 @@ const ContactSection = () => {
           I'm currently looking for new opportunities. Whether you have a
           question or just want to say hi, I'll try my best to get back to you!
         </p>
-
-        <Button variant="glow" size="lg" asChild>
-          <a href="mailto:ayanfeoluwaalalade2000@gmail.com">Say Hello</a>
-        </Button>
 
         {/* Social Links */}
         <div className="flex justify-center gap-6 mt-16">
