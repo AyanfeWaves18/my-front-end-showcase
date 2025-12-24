@@ -1,3 +1,5 @@
+import profilePhoto from "@/assets/profile-photo.jpg";
+
 const AboutSection = () => {
   const technologies = [
     "HTML",
@@ -48,12 +50,12 @@ const AboutSection = () => {
 
           <div className="relative group">
             <div className="relative z-10 rounded-lg overflow-hidden">
-              <div className="aspect-square bg-secondary flex items-center justify-center">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                  <span className="text-6xl">👨‍💻</span>
-                </div>
-              </div>
-              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-0 transition-opacity duration-300" />
+              <img
+                src={profilePhoto}
+                alt="Ayanfeoluwa Alalade"
+                className="aspect-square w-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <div className="absolute inset-0 bg-primary/20 opacity-40 group-hover:opacity-0 transition-opacity duration-300" />
             </div>
             <div className="absolute inset-0 border-2 border-primary rounded-lg translate-x-4 translate-y-4 -z-10 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-300" />
           </div>
