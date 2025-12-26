@@ -31,9 +31,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <a
             href="#"
-            className="text-xl font-mono font-semibold text-gradient"
+            className="text-xl font-semibold tracking-tight"
           >
-            {"<Dev />"}
+            <span className="text-primary">Ayanfe</span>
+            <span className="text-foreground">oluwa</span>
+            <span className="text-primary">.</span>
           </a>
 
           {/* Desktop Navigation */}
