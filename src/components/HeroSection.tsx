@@ -1,4 +1,3 @@
-import { ArrowDown } from "lucide-react";
 import { Button } from "./ui/button";
 
 const HeroSection = () => {
@@ -46,19 +45,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in"
-        style={{ animationDelay: "1200ms" }}
-      >
-        <a
-          href="#about"
-          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-        >
-          <span className="font-mono text-xs">scroll down</span>
-          <ArrowDown size={20} className="animate-float" />
-        </a>
-      </div>
 
       {/* Background decoration */}
       <div className="absolute top-1/4 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
