@@ -13,9 +13,6 @@ const Footer = () => {
             Ayanfeoluwa Alalade
           </a>
         </p>
-        <p className="text-muted-foreground/60 text-xs mt-2 font-mono">
-          Built with React & Tailwind CSS
-        </p>
       </div>
     </footer>
   );
