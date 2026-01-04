@@ -27,7 +27,7 @@ const skills = [
     title: "React & Modern Tools",
     description:
       "Building component-based applications with React and TypeScript for scalable solutions.",
-    technologies: ["React", "TypeScript", "Vite", "Git"],
+    technologies: ["React", "TypeScript", "Git"],
   },
 ];
 
