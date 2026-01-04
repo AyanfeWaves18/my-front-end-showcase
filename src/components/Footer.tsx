@@ -5,7 +5,7 @@ const Footer = () => {
         <p className="text-muted-foreground text-sm font-mono">
           Designed & Built by{" "}
           <a
-            href="https://github.com"
+            href="https://github.com/AyanfeWaves18"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:underline"
