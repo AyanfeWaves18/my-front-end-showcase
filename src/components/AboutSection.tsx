@@ -1,13 +1,8 @@
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const AboutSection = () => {
-  const technologies = [
-    "HTML",
-    "CSS",
-    "JavaScript (ES6+)",
-    "React",
-    "TypeScript",
-  ];
+  const coreTechnologies = ["HTML", "CSS", "JavaScript"];
+  const learningTechnologies = ["React", "TypeScript"];
 
   return (
     <section id="about" className="py-24 px-6">
@@ -36,7 +31,21 @@ const AboutSection = () => {
             <p>Here are a few technologies I've been working with recently:</p>
 
             <ul className="grid grid-cols-2 gap-2 mt-4">
-              {technologies.map((tech) => (
+              {coreTechnologies.map((tech) => (
+                <li
+                  key={tech}
+                  className="flex items-center gap-2 font-mono text-sm"
+                >
+                  <span className="text-primary">▹</span>
+                  {tech}
+                </li>
+              ))}
+            </ul>
+
+            <p className="mt-4">But expanding my knowledge to learn:</p>
+
+            <ul className="grid grid-cols-2 gap-2 mt-2">
+              {learningTechnologies.map((tech) => (
                 <li
                   key={tech}
                   className="flex items-center gap-2 font-mono text-sm"
