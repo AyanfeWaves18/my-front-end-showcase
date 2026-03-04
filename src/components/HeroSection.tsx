@@ -29,7 +29,7 @@ const HeroSection = () => {
           className="text-muted-foreground max-w-xl text-lg mb-12 leading-relaxed opacity-0 animate-fade-in"
           style={{ animationDelay: "800ms" }}
         >
-          I'm a frontend developer who believes code is a creative medium. I transform complex problems into intuitive, delightful interfaces. When I'm not wrestling with CSS or JavaScript, I'm probably taking some photographs or doing some image editing while listening to music.
+          I'm a frontend developer who believes code is a creative medium. I transform complex problems into intuitive, delightful interfaces. When I'm not wrestling with HTML, CSS or JavaScript, I'm probably taking some photographs or doing some image editing while listening to music.
         </p>
         
         <div
