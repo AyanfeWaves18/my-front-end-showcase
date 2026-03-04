@@ -62,7 +62,7 @@ const AboutSection = () => {
               <img
                 src={profilePhoto}
                 alt="Ayanfeoluwa Alalade"
-                className="aspect-square w-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-300"
+                className="aspect-square w-full object-cover object-top transition-all duration-300"
               />
               <div className="absolute inset-0 bg-primary/20 opacity-40 group-hover:opacity-0 transition-opacity duration-300" />
             </div>
