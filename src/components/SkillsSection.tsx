@@ -24,9 +24,9 @@ const skills = [
   },
   {
     icon: Zap,
-    title: "React & Modern Tools",
+    title: "React & Modern Tools (Exploring)",
     description:
-      "Building component-based applications with React and TypeScript for scalable solutions.",
+      "Currently expanding my skill set by exploring component-based development with React and TypeScript.",
     technologies: ["React", "TypeScript", "Git"],
   },
 ];
