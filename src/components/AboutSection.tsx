@@ -13,8 +13,8 @@ const AboutSection = () => {
           <div className="md:col-span-2 space-y-4 text-muted-foreground">
             <p>
               Hello! I'm Ayanfeoluwa, a passionate frontend developer based in
-              Nigeria. I enjoy creating things that live on the internet,
-              whether that be websites, applications, or anything in between.
+              Nigeria. I enjoy building beautiful, functional websites that
+              deliver great user experiences.
             </p>
             <p>
               My journey into tech is rooted in a genuine interest that began in
