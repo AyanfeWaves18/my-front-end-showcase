@@ -1,4 +1,4 @@
-import { Code2, Palette, Terminal, Zap } from "lucide-react";
+import { Code2, Palette, Terminal, Zap, Camera, Image } from "lucide-react";
 
 const skills = [
   {
