@@ -12,7 +12,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4 text-muted-foreground">
             <p>
-              Hello! I'm Ayanfeoluwa, a frontend developer, image editor, and
+              Hello! I'm Ayanfeoluwa, a frontend developer and
               freelance photographer based in Nigeria. I enjoy building beautiful,
               functional websites that deliver great user experiences.
             </p>
@@ -23,10 +23,9 @@ const AboutSection = () => {
               creativity.
             </p>
             <p>
-              Beyond the screen, I express my creativity through photography and
-              image editing — capturing moments and refining visuals with the same
-              attention to detail I bring to every line of code. Whether I'm
-              crafting a responsive web application, retouching a photo, or
+              Beyond the screen, I express my creativity through photography —
+              capturing moments with the same attention to detail I bring to every
+              line of code. Whether I'm crafting a responsive web application or
               shooting on location, I believe in creating work that tells a story.
             </p>
             <p>Here are a few technologies I've been working with recently:</p>
