@@ -30,13 +30,6 @@ const skills = [
     technologies: ["React", "TypeScript", "Git"],
   },
   {
-    icon: Image,
-    title: "Image Editing",
-    description:
-      "Transforming raw visuals into polished, compelling imagery through color grading, retouching, and creative composition.",
-    technologies: ["Photo Retouching", "Color Grading", "Composition", "Layer Editing"],
-  },
-  {
     icon: Camera,
     title: "Photography",
     description:
