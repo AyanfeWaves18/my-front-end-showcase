@@ -22,7 +22,7 @@ const HeroSection = () => {
           className="text-3xl sm:text-4xl md:text-6xl font-bold text-muted-foreground mb-8 opacity-0 animate-fade-in"
           style={{ animationDelay: "600ms" }}
         >
-          I build things for the web.
+          Frontend Developer, Image Editor & Photographer.
         </h2>
         
         <p

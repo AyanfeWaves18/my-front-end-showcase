@@ -1,4 +1,4 @@
-import { Code2, Palette, Terminal, Zap } from "lucide-react";
+import { Code2, Palette, Terminal, Zap, Camera, Image } from "lucide-react";
 
 const skills = [
   {
@@ -28,6 +28,20 @@ const skills = [
     description:
       "Currently expanding my skill set by exploring component-based development with React and TypeScript.",
     technologies: ["React", "TypeScript", "Git"],
+  },
+  {
+    icon: Image,
+    title: "Image Editing",
+    description:
+      "Transforming raw visuals into polished, compelling imagery through color grading, retouching, and creative composition.",
+    technologies: ["Photo Retouching", "Color Grading", "Composition", "Layer Editing"],
+  },
+  {
+    icon: Camera,
+    title: "Photography",
+    description:
+      "Capturing moments and telling stories through the lens with a keen eye for lighting, framing, and emotion.",
+    technologies: ["Portrait", "Event", "Product", "Lightroom"],
   },
 ];
 
