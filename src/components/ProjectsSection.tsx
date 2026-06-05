@@ -94,7 +94,8 @@ const ProjectsSection = () => {
                   </a>
                 </div>
               </div>
-            </div>
+              </div>
+            </Reveal>
           ))}
         </div>
 
