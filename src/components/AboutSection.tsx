@@ -13,9 +13,9 @@ const AboutSection = () => {
         <Reveal className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4 text-muted-foreground">
             <p>
-              Hello! I'm Ayanfeoluwa, a frontend developer and
-              freelance photographer based in Nigeria. I enjoy building beautiful,
-              functional websites that deliver great user experiences.
+              Hello! I'm Ayanfeoluwa, a frontend developer based in Nigeria.
+              I enjoy building beautiful, functional websites that deliver
+              great user experiences.
             </p>
             <p>
               My journey into tech is rooted in a genuine interest that began in
@@ -24,10 +24,9 @@ const AboutSection = () => {
               creativity.
             </p>
             <p>
-              Beyond the screen, I express my creativity through photography —
-              capturing moments with the same attention to detail I bring to every
-              line of code. Whether I'm crafting a responsive web application or
-              shooting on location, I believe in creating work that tells a story.
+              I care about clean code, thoughtful design, and creating interfaces
+              that feel effortless to use. Every project is an opportunity to
+              learn something new and push my craft further.
             </p>
             <p>Here are a few technologies I've been working with recently:</p>
 
