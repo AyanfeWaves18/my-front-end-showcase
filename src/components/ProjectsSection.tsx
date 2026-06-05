@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import Reveal from "./Reveal";
 
 const featuredProjects = [
   {
@@ -28,12 +29,12 @@ const ProjectsSection = () => {
         {/* Featured Projects */}
         <div className="space-y-24 mb-24">
           {featuredProjects.map((project, index) => (
-            <div
-              key={project.title}
-              className={`relative grid md:grid-cols-12 gap-4 items-center ${
-                index % 2 === 1 ? "md:text-right" : ""
-              }`}
-            >
+            <Reveal key={project.title} delay={index * 100}>
+              <div
+                className={`relative grid md:grid-cols-12 gap-4 items-center ${
+                  index % 2 === 1 ? "md:text-right" : ""
+                }`}
+              >
               {/* Project Image */}
               <div
                 className={`md:col-span-7 ${
@@ -93,7 +94,8 @@ const ProjectsSection = () => {
                   </a>
                 </div>
               </div>
-            </div>
+              </div>
+            </Reveal>
           ))}
         </div>
 

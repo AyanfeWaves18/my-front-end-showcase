@@ -1,4 +1,5 @@
 import { Code2, Palette, Terminal, Zap, Camera } from "lucide-react";
+import Reveal from "./Reveal";
 
 const skills = [
   {
@@ -46,11 +47,10 @@ const SkillsSection = () => {
 
         <div className="grid md:grid-cols-2 gap-6">
           {skills.map((skill, index) => (
-            <div
-              key={skill.title}
-              className="group p-6 rounded-lg bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:glow-soft"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
+            <Reveal key={skill.title} delay={index * 80}>
+              <div
+                className="group p-6 rounded-lg bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:glow-soft h-full"
+              >
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
                   <skill.icon size={24} />
@@ -74,7 +74,8 @@ const SkillsSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+              </div>
+            </Reveal>
           ))}
         </div>
       </div>

@@ -1,4 +1,5 @@
 import profilePhoto from "@/assets/profile-photo.jpg";
+import Reveal from "./Reveal";
 
 const AboutSection = () => {
   const coreTechnologies = ["HTML", "CSS", "JavaScript"];
@@ -9,7 +10,7 @@ const AboutSection = () => {
       <div className="container mx-auto max-w-4xl">
         <h2 className="section-heading mb-12">About Me</h2>
 
-        <div className="grid md:grid-cols-3 gap-12">
+        <Reveal className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4 text-muted-foreground">
             <p>
               Hello! I'm Ayanfeoluwa, a frontend developer and
@@ -68,7 +69,7 @@ const AboutSection = () => {
             </div>
             <div className="absolute inset-0 border-2 border-primary rounded-lg translate-x-4 translate-y-4 -z-10 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-300" />
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
