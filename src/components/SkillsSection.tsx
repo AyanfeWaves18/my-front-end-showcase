@@ -74,7 +74,8 @@ const SkillsSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+              </div>
+            </Reveal>
           ))}
         </div>
       </div>
