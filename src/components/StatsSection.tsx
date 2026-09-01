@@ -10,12 +10,11 @@ interface Stat {
 const stats: Stat[] = [
   { value: 15, suffix: "+", label: "Projects Built" },
   { value: 3, suffix: "+", label: "Years Coding" },
-  { value: 20, suffix: "+", label: "Technologies" },
   { value: 100, suffix: "%", label: "Passion Driven" },
 ];
 
 const Counter = ({ end, suffix, start }: { end: number; suffix: string; start: boolean }) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
 
   useEffect(() => {
     if (!start) return;
@@ -26,7 +25,7 @@ const Counter = ({ end, suffix, start }: { end: number; suffix: string; start: b
     const tick = (now: number) => {
       const progress = Math.min((now - startTime) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.round(eased * end));
+      setCount(1 + Math.round(eased * (end - 1)));
       if (progress < 1) frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick);
