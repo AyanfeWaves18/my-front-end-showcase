@@ -46,73 +46,60 @@ const ProjectsSection = () => {
         <div className="space-y-24 mb-24">
           {featuredProjects.map((project, index) => (
             <Reveal key={project.title} delay={index * 100}>
-              <div
-                className={`relative grid md:grid-cols-12 gap-4 items-center ${
-                  index % 2 === 1 ? "md:text-right" : ""
-                }`}
-              >
-              {/* Project Image */}
-              <div
-                className={`md:col-span-7 ${
-                  index % 2 === 1 ? "md:col-start-6" : ""
-                }`}
-              >
-                <div className="relative group">
-                  <div className="aspect-video bg-secondary rounded-lg overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={`${project.title} landing page`}
-                      loading="lazy"
-                      className="w-full h-full object-cover object-top transition-all duration-300 group-hover:scale-105"
-                    />
+              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                {/* Project Image */}
+                <div className={index % 2 === 1 ? "md:order-2" : ""}>
+                  <div className="relative group rounded-lg overflow-hidden border border-border">
+                    <div className="aspect-video bg-secondary overflow-hidden">
+                      <img
+                        src={project.image}
+                        alt={`${project.title} landing page`}
+                        loading="lazy"
+                        className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="absolute inset-0 bg-primary/10 opacity-50 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none" />
                   </div>
-                  <div className="absolute inset-0 bg-primary/10 opacity-50 group-hover:opacity-0 transition-opacity duration-300 rounded-lg" />
                 </div>
-              </div>
 
-              {/* Project Info */}
-              <div
-                className={`md:col-span-6 md:absolute ${
-                  index % 2 === 1
-                    ? "md:left-0 md:text-left"
-                    : "md:right-0 md:text-right"
-                }`}
-              >
-                <p className="font-mono text-primary text-sm mb-2">
-                  Featured Project
-                </p>
-                <h3 className="text-2xl font-semibold text-foreground mb-4">
-                  {project.title}
-                </h3>
-                <div className="bg-card p-6 rounded-lg shadow-xl mb-4">
-                  <p className="text-muted-foreground text-sm">
-                    {project.description}
+                {/* Project Info */}
+                <div className={index % 2 === 1 ? "md:order-1 md:text-left" : "md:text-right"}>
+                  <p className="font-mono text-primary text-sm mb-2">
+                    Featured Project
                   </p>
-                </div>
-                <ul
-                  className={`flex flex-wrap gap-3 font-mono text-xs text-muted-foreground mb-4 ${
-                    index % 2 === 1 ? "md:justify-start" : "md:justify-end"
-                  }`}
-                >
-                  {project.technologies.map((tech) => (
-                    <li key={tech}>{tech}</li>
-                  ))}
-                </ul>
-                <div
-                  className={`flex gap-4 ${
-                    index % 2 === 1 ? "md:justify-start" : "md:justify-end"
-                  }`}
-                >
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground hover:text-primary transition-colors"
+                  <h3 className="text-2xl font-semibold text-foreground mb-4">
+                    {project.title}
+                  </h3>
+                  <div className="bg-card p-6 rounded-lg shadow-xl mb-4">
+                    <p className="text-muted-foreground text-sm">
+                      {project.description}
+                    </p>
+                  </div>
+                  <ul
+                    className={`flex flex-wrap gap-3 font-mono text-xs text-muted-foreground mb-4 ${
+                      index % 2 === 1 ? "md:justify-start" : "md:justify-end"
+                    }`}
                   >
-                    <ExternalLink size={20} />
-                  </a>
+                    {project.technologies.map((tech) => (
+                      <li key={tech}>{tech}</li>
+                    ))}
+                  </ul>
+                  <div
+                    className={`flex gap-4 ${
+                      index % 2 === 1 ? "md:justify-start" : "md:justify-end"
+                    }`}
+                  >
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-foreground hover:text-primary transition-colors"
+                      aria-label={`Open ${project.title} live demo`}
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  </div>
                 </div>
-              </div>
               </div>
             </Reveal>
           ))}
