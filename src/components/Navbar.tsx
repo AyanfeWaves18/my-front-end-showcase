@@ -50,11 +50,6 @@ const Navbar = () => {
                 <span className="text-primary">0{index + 1}.</span> {link.name}
               </a>
             ))}
-            <Button variant="hero" size="sm" asChild>
-              <a href="/Ayanfeoluwa_Alalade_Resume.pdf" target="_blank" download>
-                Resume
-              </a>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -79,11 +74,6 @@ const Navbar = () => {
                 <span className="text-primary">0{index + 1}.</span> {link.name}
               </a>
             ))}
-            <Button variant="hero" size="sm" className="w-fit" asChild>
-              <a href="/Ayanfeoluwa_Alalade_Resume.pdf" target="_blank" download>
-                Resume
-              </a>
-            </Button>
           </div>
         )}
       </div>
