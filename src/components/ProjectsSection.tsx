@@ -8,7 +8,7 @@ const featuredProjects = [
       "A Mini E-Commerce web application featuring product browsing, shopping cart functionality, and a clean user interface for an elegant shopping experience.",
     technologies: ["HTML", "CSS", "JavaScript"],
     live: "https://teal-and-gold-mini-store.vercel.app/",
-    image: "🛒",
+    image: "/projects/teal-gold.jpg",
   },
   {
     title: "Nike Rebrand",
@@ -16,7 +16,23 @@ const featuredProjects = [
       "A rebranded website concept for Nike, showcasing modern design principles and creative web development with a fresh take on the iconic brand.",
     technologies: ["HTML", "CSS", "JavaScript"],
     live: "https://nike-rebrand-lemon.vercel.app/",
-    image: "👟",
+    image: "/projects/nike-rebrand.jpg",
+  },
+  {
+    title: "Ayanfeoluwa Alalade — Portfolio Landing Page",
+    description:
+      "A dual-purpose landing page with a split-screen design that introduces both the creative and technical sides of my work, serving as a navigation hub to each discipline.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    live: "https://ayanfeoluwa-alalade.vercel.app/",
+    image: "/projects/ayanfeoluwa-alalade.jpg",
+  },
+  {
+    title: "Ayanfe Dev — Developer Portfolio",
+    description:
+      "A dark-themed developer portfolio with an animated hero intro, numbered navigation, and sections for about, skills, projects, and contact.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    live: "https://ayanfe-dev.vercel.app/",
+    image: "/projects/ayanfe-dev.jpg",
   },
 ];
 
@@ -43,9 +59,12 @@ const ProjectsSection = () => {
               >
                 <div className="relative group">
                   <div className="aspect-video bg-secondary rounded-lg overflow-hidden">
-                    <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:from-primary/30 group-hover:to-primary/10 transition-all duration-300">
-                      <span className="text-6xl">{project.image}</span>
-                    </div>
+                    <img
+                      src={project.image}
+                      alt={`${project.title} landing page`}
+                      loading="lazy"
+                      className="w-full h-full object-cover object-top transition-all duration-300 group-hover:scale-105"
+                    />
                   </div>
                   <div className="absolute inset-0 bg-primary/10 opacity-50 group-hover:opacity-0 transition-opacity duration-300 rounded-lg" />
                 </div>
