@@ -47,7 +47,7 @@ const StatsSection = () => {
     <section className="py-16 px-6">
       <div
         ref={ref}
-        className={`container mx-auto max-w-5xl grid grid-cols-2 md:grid-cols-4 gap-8 transition-all duration-700 ${
+        className={`container mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-700 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
       >
