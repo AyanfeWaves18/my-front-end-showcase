@@ -142,8 +142,33 @@ const ContactSection = () => {
               required
             />
           </div>
-          <Button type="submit" variant="glow" size="lg" className="w-full sm:w-auto">
-            <Send size={16} /> Send Message
+          {/* Honeypot — hidden from humans, catches bots */}
+          <input
+            type="text"
+            name="website"
+            value={form.website}
+            onChange={(e) => setForm({ ...form, website: e.target.value })}
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden="true"
+            className="hidden"
+          />
+          <Button
+            type="submit"
+            variant="glow"
+            size="lg"
+            className="w-full sm:w-auto"
+            disabled={sending}
+          >
+            {sending ? (
+              <>
+                <Loader2 size={16} className="animate-spin" /> Sending...
+              </>
+            ) : (
+              <>
+                <Send size={16} /> Send Message
+              </>
+            )}
           </Button>
         </form>
 
