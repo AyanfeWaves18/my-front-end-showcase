@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { Github, Linkedin, Mail, Send } from "lucide-react";
+import { Github, Linkedin, Mail, Send, Loader2 } from "lucide-react";
 import { z } from "zod";
+import { supabase } from "@/integrations/supabase/client";
+import { FunctionsHttpError } from "@supabase/supabase-js";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
