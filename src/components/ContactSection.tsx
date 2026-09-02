@@ -36,9 +36,10 @@ const contactSchema = z.object({
 });
 
 const ContactSection = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", message: "", website: "" });
+  const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = contactSchema.safeParse(form);
     if (!result.success) {
@@ -50,16 +51,34 @@ const ContactSection = () => {
       return;
     }
 
-    const { name, email, message } = result.data;
-    const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`);
-    window.location.href = `mailto:ayanfeoluwaalalade2000@gmail.com?subject=${subject}&body=${body}`;
+    setSending(true);
+    try {
+      const { error } = await supabase.functions.invoke("send-contact-email", {
+        body: result.data,
+      });
 
-    toast({
-      title: "Opening your email app",
-      description: "Thanks for reaching out — I'll reply as soon as I can.",
-    });
-    setForm({ name: "", email: "", message: "" });
+      if (error) {
+        const details =
+          error instanceof FunctionsHttpError ? await error.context.text() : error.message;
+        console.error("send-contact-email failed:", details);
+        throw new Error("send failed");
+      }
+
+      toast({
+        title: "Message sent!",
+        description: "Thanks for reaching out — I'll reply as soon as I can.",
+      });
+      setForm({ name: "", email: "", message: "", website: "" });
+    } catch {
+      toast({
+        title: "Couldn't send your message",
+        description:
+          "Something went wrong. Please email me directly at ayanfeoluwaalalade2000@gmail.com",
+        variant: "destructive",
+      });
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
