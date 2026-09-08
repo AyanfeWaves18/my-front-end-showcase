@@ -21,6 +21,13 @@ const Index = () => {
           name="keywords"
           content="frontend developer, web developer, HTML, CSS, JavaScript, React, Nigeria"
         />
+        <meta property="og:title" content="Ayanfeoluwa Alalade | Frontend Developer" />
+        <meta
+          property="og:description"
+          content="Frontend Developer based in Nigeria, building intuitive and responsive web experiences with HTML, CSS, and JavaScript."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="/" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
