@@ -15,15 +15,16 @@ const HeroSection = () => {
           className="text-4xl sm:text-5xl md:text-7xl font-bold text-foreground mb-4 opacity-0 animate-fade-in"
           style={{ animationDelay: "400ms" }}
         >
-          Ayanfeoluwa Alalade.
+          Ayanfeoluwa Alalade
+          <span className="sr-only"> — Frontend Developer</span>
         </h1>
         
-        <h2
+        <p
           className="text-3xl sm:text-4xl md:text-6xl font-bold text-muted-foreground mb-8 opacity-0 animate-fade-in"
           style={{ animationDelay: "600ms" }}
         >
           Frontend Developer.
-        </h2>
+        </p>
         
         <p
           className="text-muted-foreground max-w-xl text-lg mb-12 leading-relaxed opacity-0 animate-fade-in"

@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 const NotFound = () => {
   const location = useLocation();
@@ -9,6 +10,15 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
+    <>
+    <Helmet>
+      <title>Page Not Found | Ayanfeoluwa Alalade</title>
+      <meta name="description" content="This page doesn't exist. Head back to Ayanfeoluwa Alalade's frontend developer portfolio." />
+      <meta name="robots" content="noindex" />
+      <meta property="og:title" content="Page Not Found | Ayanfeoluwa Alalade" />
+      <meta property="og:description" content="This page doesn't exist. Head back to the portfolio homepage." />
+      <meta property="og:url" content="/404" />
+    </Helmet>
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">404</h1>
@@ -18,6 +28,7 @@ const NotFound = () => {
         </a>
       </div>
     </div>
+    </>
   );
 };
 
